@@ -2,31 +2,47 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Контакты | Мой учебный проект</title>
-    <meta name="description" content="Свяжитесь со мной для обсуждения проектов или сотрудничества">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Свяжитесь со мной для заказа сайта - ТопТоп</title>
+    <meta name="description" content="Свяжитесь для обсуждения вашего проекта. Контакты для заказа сайта, консультации по веб-разработке и сотрудничеству. Быстрая обратная связь.">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="about.html">О себе</a>
-            <a href="portfolio.html">Портфолио</a>
-            <a href="contacts.html">Контакты</a>
-        </nav>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">ТопТоп Контакты</a>
+                <nav>
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i> Главная
+                    </a>
+                    <a href="about.html" class="nav-link">
+                        <i class="fas fa-user"></i> Обо мне
+                    </a>
+                    <a href="portfolio.html" class="nav-link">
+                        <i class="fas fa-images"></i> Портфолио
+                    </a>
+                    <a href="contacts.html" class="nav-link active">
+                        <i class="fas fa-envelope"></i> Контакты
+                    </a>
+                </nav>
+            </div>
+        </div>
     </header>
     
-    <main>
-        <h1>Мои контакты</h1>
-        <p>Если у вас есть вопросы или предложения о сотрудничестве, свяжитесь со мной!</p>
+    <main class="container">
+        <!-- Один H1 на странице -->
+        <h1 class="page-title">Свяжитесь со мной для обсуждения проекта</h1>
+        <p class="page-subtitle">Если у вас есть вопросы или предложения о сотрудничестве, свяжитесь со мной!</p>
         
         <div class="contact-container">
             <section class="contact-info">
                 <h2>Контактная информация</h2>
                 <ul>
                     <li><strong>Email:</strong> student@example.com</li>
-                    <li><strong>GitHub:</strong> <a href="https://github.com/ваш-логин">github.com/ваш-логин</a></li>
-                    <li><strong>Телеграм:</strong> @lenoktimo</li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/lenoktimo">github.com/lenoktimo</a></li>
+                    <li><strong>Telegram:</strong> @lenoktimo</li>
                     <li><strong>Местоположение:</strong> Москва, Россия</li>
                 </ul>
             </section>
@@ -35,32 +51,34 @@
                 <h2>Форма обратной связи</h2>
                 <form id="contactForm">
                     <div class="form-group">
-                        <label for="name">Ваше имя:</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="name" class="form-label">Ваше имя:</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email">Ваш email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email" class="form-label">Ваш email:</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="subject">Тема сообщения:</label>
-                        <input type="text" id="subject" name="subject">
+                        <label for="subject" class="form-label">Тема сообщения:</label>
+                        <input type="text" id="subject" name="subject" class="form-input">
                     </div>
                     
                     <div class="form-group">
-                        <label for="message">Сообщение:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message" class="form-label">Сообщение:</label>
+                        <textarea id="message" name="message" rows="5" class="form-input" required></textarea>
                     </div>
                     
-                    <button type="submit">Отправить сообщение</button>
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i> Отправить сообщение
+                    </button>
                 </form>
             </section>
         </div>
         
         <section class="faq">
-            <h2>Частые вопросы</h2>
+            <h2>Частые вопросы о сотрудничестве</h2>
             <details>
                 <summary>Как быстро я отвечаю на сообщения?</summary>
                 <p>Обычно я отвечаю в течение 24 часов в рабочие дни.</p>
@@ -77,8 +95,14 @@
     </main>
     
     <footer>
-        <p>© 2025 Мой учебный проект | Страница "Контакты"</p>
-        <p>Сайт создан в рамках лабораторной работы по SEO</p>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>© 2025 ТопТоп - Проекты по веб-разработке | Страница "Контакты"</p>
+                    <p>Сайт создан в рамках лабораторной работы по SEO-оптимизации</p>
+                </div>
+            </div>
+        </div>
     </footer>
     
     <script src="js/script.js"></script>
