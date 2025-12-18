@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Мой проект | Главная</title>
-    <meta name="description" content="Красивый сайт с галереей моих фотографий">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТопТоп - Создаю современные сайты и веб-приложения | Главная</title>
+    <meta name="description" content="Профессиональная разработка сайтов и веб-приложений. Современный дизайн, адаптивная верстка, быстрая загрузка. Индивидуальный подход к каждому проекту.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -12,7 +13,7 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="index.html" class="logo">Портфолио</a>
+                <a href="index.html" class="logo">ТопТоп Веб-разработка</a>
                 <nav>
                     <a href="index.html" class="nav-link active">
                         <i class="fas fa-home"></i> Главная
@@ -21,7 +22,7 @@
                         <i class="fas fa-user"></i> Обо мне
                     </a>
                     <a href="portfolio.html" class="nav-link">
-                        <i class="fas fa-images"></i> Фотографии
+                        <i class="fas fa-images"></i> Портфолио
                     </a>
                     <a href="contacts.html" class="nav-link">
                         <i class="fas fa-envelope"></i> Контакты
@@ -33,96 +34,90 @@
 
     <!-- ОСНОВНОЙ КОНТЕНТ -->
     <main class="container">
-        <!-- ЗАГОЛОВОК -->
-        <div class="page-header">
-            <h1 class="page-title">Добро пожаловать в мой мир! <span class="heart-emoji">💖</span></h1>
-            <p class="page-subtitle">Здесь я делюсь своими фотографиями, мыслями и творческими проектами</p>
-        </div>
+        <!-- Один H1 на странице -->
+        <h1 class="page-title">Создаю современные сайты и веб-приложения</h1>
+        <p class="page-subtitle">Здесь я делюсь своими фотографиями, мыслями и творческими проектами</p>
 
         <!-- ГАЛЕРЕЯ ФОТО -->
         <section>
-            <h2 style="text-align: center; color: #e64980; margin-bottom: 40px; font-size: 28px;">
-                <i class="fas fa-heart"></i> Моя фотогалерея
-            </h2>
+            <h2>Моя фотогалерея</h2>
             
             <div class="photo-gallery">
                 <!-- Фото 1 -->
-                <div class="photo-card">
-                    <img src="фото 4.png" alt="Весенняя прогулка в парке" 
+                <article class="photo-card">
+                    <img src="фото 4.png" alt="Весенняя прогулка в парке с цветущими деревьями" 
                          style="width:100%; height:250px; object-fit:cover; border-radius: 16px 16px 0 0;">
                     <div class="photo-info">
-                        <h3 class="photo-title">Весенняя прогулка</h3>
-                        <p class="photo-desc">Цветущие сады и солнечные дни</p>
+                        <h3>Весенняя прогулка в парке</h3>
+                        <p>Цветущие сады и солнечные дни в городском парке</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Фото 2 -->
-                <div class="photo-card">
-                    <img src="фото 5.png" alt="Уютное кафе с чашкой кофе" 
+                <article class="photo-card">
+                    <img src="фото 5.png" alt="Уютное кафе с чашкой кофе и книгами" 
                          style="width:100%; height:250px; object-fit:cover; border-radius: 16px 16px 0 0;">
                     <div class="photo-info">
-                        <h3 class="photo-title">Уютное кафе</h3>
-                        <p class="photo-desc">Любимые места для отдыха</p>
+                        <h3>Уютное кафе для работы</h3>
+                        <p>Любимые места для отдыха и творческой работы</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Фото 3 -->
-                <div class="photo-card">
-                    <img src="фото 6.png" alt="Творческий процесс рисования" 
+                <article class="photo-card">
+                    <img src="фото 6.png" alt="Творческий процесс рисования акварелью" 
                          style="width:100%; height:250px; object-fit:cover; border-radius: 16px 16px 0 0;">
                     <div class="photo-info">
-                        <h3 class="photo-title">Творческий процесс</h3>
-                        <p class="photo-desc">Мои художественные работы</p>
+                        <h3>Творческий процесс рисования</h3>
+                        <p>Мои художественные работы акварелью и карандашом</p>
                     </div>
-                </div>
+                </article>
 
-                <!-- Ваша фотография -->
-                <div class="photo-card">
+                <!-- Фото 4 -->
+                <article class="photo-card">
                     <img src="фото 7.png" 
-                         alt="Моё лучшее фото для портфолио" 
+                         alt="Моё профессиональное фото для портфолио веб-разработчика" 
                          style="width:100%; height:250px; object-fit:cover; border-radius: 16px 16px 0 0;">
                     <div class="photo-info">
-                        <h3 class="photo-title">Моё лучшее фото</h3>
-                        <p class="photo-desc">Самая удачная фотография для портфолио</p>
+                        <h3>Профессиональное фото для портфолио</h3>
+                        <p>Самая удачная фотография для представления проектов</p>
                     </div>
-                </div>
-            </div> <!-- Закрывающий тег для .photo-gallery -->
+                </article>
+            </div>
         </section>
 
         <!-- ПРОЕКТЫ -->
         <section style="margin-top: 80px;">
-            <h2 style="text-align: center; color: #e64980; margin-bottom: 40px; font-size: 28px;">
-                <i class="fas fa-star"></i> Мои проекты
-            </h2>
+            <h2>Мои проекты по веб-разработке</h2>
             
             <div class="projects-grid">
-                <div class="project-card">
+                <article class="project-card">
                     <img src="https://images.unsplash.com/photo-1558655146-db7f7d535b26?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         alt="Дизайн проект" class="project-image">
+                         alt="Дизайн проект современного веб-сайта" class="project-image">
                     <div class="project-content">
-                        <h3 class="project-title">Веб-дизайн</h3>
-                        <p>Создание красивых и функциональных сайтов</p>
+                        <h3>Веб-дизайн и UI/UX</h3>
+                        <p>Создание красивых и функциональных сайтов с современным дизайном</p>
                         <div class="project-tags">
                             <span class="tag">Figma</span>
                             <span class="tag">UI/UX</span>
-                            <span class="tag">Дизайн</span>
+                            <span class="tag">Веб-дизайн</span>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
+                <article class="project-card">
                     <img src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         alt="Фотография" class="project-image">
+                         alt="Фотография для веб-сайтов и контента" class="project-image">
                     <div class="project-content">
-                        <h3 class="project-title">Фотография</h3>
-                        <p>Портреты, пейзажи и предметная съёмка</p>
+                        <h3>Фотография для сайтов</h3>
+                        <p>Портреты, пейзажи и предметная съёмка для веб-контента</p>
                         <div class="project-tags">
-                            <span class="tag">Фото</span>
+                            <span class="tag">Фотография</span>
                             <span class="tag">Обработка</span>
                             <span class="tag">Креатив</span>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
     </main>
@@ -133,15 +128,15 @@
             <div class="footer-content">
                 <div>
                     <p style="font-size: 18px; color: #e64980; margin-bottom: 10px;">
-                        <i class="fas fa-heart heart-emoji"></i> Спасибо за визит!
+                        <i class="fas fa-heart heart-emoji"></i> Спасибо за визит на мой сайт!
                     </p>
-                    <p>© 2025 Мой проект. Сделано с любовью.</p>
+                    <p>© 2025 ТопТоп - Проекты по веб-разработке</p>
                 </div>
                 <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="social-link" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
