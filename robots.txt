@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+
+Sitemap: https://lenoktimo.github.io/toptop/sitemap.xml
