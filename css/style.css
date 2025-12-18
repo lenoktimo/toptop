@@ -1,0 +1,400 @@
+/* ===== НЕЖНЫЕ РОЗОВЫЕ ОТТЕНКИ ===== */
+:root {
+    --pink-light: #fff0f6;
+    --pink-soft: #ffdeeb;
+    --pink-main: #f783ac;
+    --pink-dark: #e64980;
+    --pink-deep: #d6336c;
+    --gray-light: #f8f9fa;
+    --gray-text: #495057;
+    --shadow-soft: 0 8px 30px rgba(230, 73, 128, 0.08);
+    --radius: 16px;
+}
+
+/* ===== БАЗОВЫЕ СТИЛИ ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    line-height: 1.6;
+    color: var(--gray-text);
+    background: linear-gradient(135deg, var(--pink-light) 0%, #fff 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== МИЛАЯ ШАПКА ===== */
+header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--pink-soft);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--pink-deep);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo::before {
+    content: "🌸";
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link {
+    color: var(--pink-dark);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-link:hover {
+    background: var(--pink-soft);
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background: linear-gradient(45deg, var(--pink-main), var(--pink-dark));
+    color: white;
+    box-shadow: 0 4px 15px rgba(247, 131, 172, 0.3);
+}
+
+/* ===== ГЛАВНЫЙ КОНТЕНТ ===== */
+main {
+    padding: 60px 0;
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== ЗАГОЛОВКИ СТРАНИЦ ===== */
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 40px 20px;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+}
+
+.page-title {
+    font-size: 42px;
+    background: linear-gradient(45deg, var(--pink-dark), var(--pink-deep));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.page-subtitle {
+    color: var(--gray-text);
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.8;
+}
+
+/* ===== ГАЛЕРЕЯ ФОТОГРАФИЙ ===== */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 50px 0;
+}
+
+.photo-card {
+    background: white;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+    border: 1px solid var(--pink-soft);
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(230, 73, 128, 0.12);
+}
+
+.photo-placeholder {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(45deg, var(--pink-light), var(--pink-soft));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pink-main);
+    font-size: 48px;
+    position: relative;
+}
+
+.photo-placeholder::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--pink-main), var(--pink-dark));
+}
+
+.photo-info {
+    padding: 20px;
+}
+
+.photo-title {
+    color: var(--pink-dark);
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.photo-desc {
+    color: var(--gray-text);
+    font-size: 14px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+/* ===== КАРТОЧКИ ПРОЕКТОВ ===== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.project-card {
+    background: white;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+    border: 1px solid var(--pink-soft);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.project-title {
+    color: var(--pink-dark);
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.tag {
+    background: var(--pink-light);
+    color: var(--pink-dark);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid var(--pink-soft);
+}
+
+/* ===== ФОРМА ОБРАТНОЙ СВЯЗИ ===== */
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid var(--pink-soft);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--pink-dark);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid var(--pink-soft);
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: var(--pink-light);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--pink-main);
+    box-shadow: 0 0 0 3px rgba(247, 131, 172, 0.2);
+}
+
+.btn {
+    background: linear-gradient(45deg, var(--pink-main), var(--pink-dark));
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(247, 131, 172, 0.3);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(247, 131, 172, 0.4);
+}
+
+/* ===== МИЛЫЙ ПОДВАЛ ===== */
+footer {
+    background: white;
+    color: var(--gray-text);
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 80px;
+    border-top: 1px solid var(--pink-soft);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    background: var(--pink-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--pink-dark);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid var(--pink-soft);
+}
+
+.social-link:hover {
+    background: var(--pink-main);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* ===== СПЕЦИАЛЬНЫЕ ЭФФЕКТЫ ===== */
+.pink-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--pink-main);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.heart-emoji {
+    color: var(--pink-main);
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .page-title {
+        font-size: 32px;
+    }
+    
+    .photo-gallery,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form {
+        padding: 25px;
+    }
+}
